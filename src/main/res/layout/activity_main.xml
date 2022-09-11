@@ -4,191 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="269dp"
-        android:layout_height="27dp"
-        android:background="@color/teal_700"
-        android:fontFamily="serif-monospace"
-        android:text="Numbers Learner"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="269dp"
-        android:layout_height="20dp"
-        android:fontFamily="serif"
-        android:textStyle="italic"
-        android:text="Click on each number for more description "
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.190" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="ONE   1"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/StudentName"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="TWO   2"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/editTextRollNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/RollNumber"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="THREE   3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="FOUR   4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />\
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="FIVE   5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="SIX   6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="SEVEN   7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="EIGHT   8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="NINE   9"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="130dp"
-        android:layout_height="65dp"
-        android:text="TEN   10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
+    <Switch
+        android:id="@+id/switchStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I have learned all the numbers by heart"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:showText="true"
+        android:text="@string/IsEnrolled"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextRollNumber" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="240dp"
-        android:layout_height="27dp"
+    <Button
+        android:id="@+id/buttonViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/ButtonViewAll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchStudent" />
 
-        android:fontFamily="serif-monospace"
-        android:textColor="@color/teal_700"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonViewAll"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintTop_toTopOf="@+id/buttonViewAll"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listViewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
