@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_surah"
+            android:icon="@drawable/read_more"
+            android:title="Search by Surah" />
+
+        <item
+            android:id="@+id/nav_Ayah"
+            android:icon="@drawable/read_more"
+            android:title="Search by Ayah" />
+
+        <item
+            android:id="@+id/nav_engTranslation"
+            android:icon="@drawable/read_more"
+            android:title="Search by English Translation" />
+
+        <item
+            android:id="@+id/nav_urduTranslation"
+            android:icon="@drawable/read_more"
+            android:title="Search by Urdu Translation" />
+
+        <item
+            android:id="@+id/nav_surahDetails"
+            android:icon="@drawable/read_more"
+            android:title="Search Surah Details" />
+
+    </group>
+
+</menu>
